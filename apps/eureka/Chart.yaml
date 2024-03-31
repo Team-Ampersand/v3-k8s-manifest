@@ -1,0 +1,4 @@
+apiVersion: v2
+name: dotori-eureka
+description: Dotori Eureka Server
+version: 1.0.0
