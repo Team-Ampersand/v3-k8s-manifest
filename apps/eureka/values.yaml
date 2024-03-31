@@ -1,13 +1,10 @@
 replicaCount: 2
-
 image:
   repository: springcloud/eureka # image url 나중에 넣기
   tag: 2.4.0
-
 service:
   name: eureka
   type: LoadBalancer
   port: 8761
-
 ingress:
   enabled: false

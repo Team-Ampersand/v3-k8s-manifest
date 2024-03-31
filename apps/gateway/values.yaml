@@ -1,14 +1,11 @@
 replicaCount: 2
-
 image:
   repository: springcloud/gateway # image url 넣기
   tag: 2.4.0
   pullPolicy: IfNotPresent
-
 service:
   name: gateway
   type: LoadBalancer
   port: 8080
-
 ingress:
   enabled: false
