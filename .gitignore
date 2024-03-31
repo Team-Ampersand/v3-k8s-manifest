@@ -1,4 +1,4 @@
 **/Chart.lock
 **/requirements.lock
-**/charts/**
-**/*.tgz
+**/charts/argo-cd/charts/**
+**/*.tg
