@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: springcloud/config-service # image url 넣기
+  tag: 2.4.0
+
+service:
+  name: config-server
+  type: LoadBalancer
+  port: 8888
+
+ingress:
+  enabled: false
