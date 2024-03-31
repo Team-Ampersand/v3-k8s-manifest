@@ -1,0 +1,4 @@
+apiVersion: v2
+name: dotori-gateway
+description: Dotori Gateway 
+version: 1.0.0

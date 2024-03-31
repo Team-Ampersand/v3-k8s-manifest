@@ -1,4 +1,4 @@
 apiVersion: v2
-name: config-server
+name: dotori-config
 description: Dotori Config 
 version: 1.0.0
