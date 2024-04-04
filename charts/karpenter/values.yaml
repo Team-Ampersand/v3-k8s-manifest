@@ -1,0 +1,20 @@
+karpenter:
+  hostNetwork: true
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: "arn:aws:iam:::role/KarpenterControllerRole-dotori-cluster"
+  replicas: 1
+  controller:
+    resources:
+      requests:
+        cpu: 16m
+        memory: 244Mi
+  settings:
+    clusterName: "dotori-cluster"
+  tolerations:
+    - key: "dotori/critical-pods"
+      operator: "Equal"
+      value: "true"
+      effect: "NoSchedule"
+  featureGates:
+    spotToSpotConsolidation: true
